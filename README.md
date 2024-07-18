@@ -21,23 +21,23 @@ This Simple Java Banking System is a console-based application that simulates ba
 
 ## Project Structure
 
-&nbsp;&nbsp;&nbsp;&nbsp;BankingSystem/
-&nbsp;&nbsp;&nbsp;&nbsp;├── src/
-&nbsp;&nbsp;&nbsp;&nbsp;│   ├── main/
-&nbsp;&nbsp;&nbsp;&nbsp;│   │   ├── Account.java
-&nbsp;&nbsp;&nbsp;&nbsp;│   │   ├── Admin.java
-&nbsp;&nbsp;&nbsp;&nbsp;│   │   ├── Bank.java
-&nbsp;&nbsp;&nbsp;&nbsp;│   │   ├── BankingApp.java
-&nbsp;&nbsp;&nbsp;&nbsp;│   │   └── Customer.java
-&nbsp;&nbsp;&nbsp;&nbsp;└── README.md
+ BankingSystem/
+ ├── src/
+ │   ├── main/
+ │   │   ├── Account.java
+ │   │   ├── Admin.java
+ │   │   ├── Bank.java
+ │   │   ├── BankingApp.java
+ │   │   └── Customer.java
+ └── README.md
 
 ## How to Run
 
 1. Ensure you have Java Development Kit (JDK) installed on your system.
 2. Compile the Java files:
-&nbsp;&nbsp;&nbsp;&nbsp;javac src/main/*.java
+javac src/main/*.java
 3. Run the BankingApp class:
-&nbsp;&nbsp;&nbsp;&nbsp;java -cp src main.BankingApp
+java -cp src main.BankingApp
 4. Follow the on-screen prompts to use the banking system.
 
 ## Future Enhancements
