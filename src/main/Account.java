@@ -3,6 +3,7 @@ package main;
 public class Account {
     private String accountNumber;
     private double balance;
+    private boolean frozen = false;
 
     public Account(String accountNumber, double initialBalance) {
         this.accountNumber = accountNumber;
@@ -17,7 +18,19 @@ public class Account {
         return balance;
     }
 
+    public void setFrozen(boolean frozen) {
+        this.frozen = frozen;
+    }
+
+    public boolean isFrozen() {
+        return frozen;
+    }
+
     public void deposit(double amount) {
+        if (frozen) {
+            System.out.println("This account is frozen. Deposit not allowed.");
+            return;
+        }
         if (amount > 0) {
             balance += amount;
             System.out.println("Deposit successful. New balance: " + balance);
@@ -27,6 +40,10 @@ public class Account {
     }
 
     public void withdraw(double amount) {
+        if (frozen) {
+            System.out.println("This account is frozen. Withdrawal not allowed.");
+            return;
+        }
         if (amount > 0 && amount <= balance) {
             balance -= amount;
             System.out.println("Withdrawal successful. New balance: " + balance);

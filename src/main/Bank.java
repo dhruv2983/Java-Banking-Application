@@ -33,4 +33,8 @@ public class Bank {
         }
         return null;
     }
+
+    public List<Customer> getAllCustomers() {
+        return new ArrayList<>(customers);
+    }
 }
